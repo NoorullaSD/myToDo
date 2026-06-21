@@ -35,6 +35,7 @@ export default function DashboardScreen() {
                     </View>
 
                     <TouchableOpacity
+                        testID="profile-button"
                         activeOpacity={0.8}
                         style={styles.profileContainer}
                         onPress={() => navigation.navigate('Profile')}
@@ -51,7 +52,7 @@ export default function DashboardScreen() {
                 {/* Stats */}
                 <View style={styles.statsRow}>
                     <View style={styles.statCard}>
-                        <Text style={styles.statNumber}>
+                        <Text testID="completed-count" style={styles.statNumber}>
                             {data.completedToday}
                         </Text>
 
@@ -61,7 +62,7 @@ export default function DashboardScreen() {
                     </View>
 
                     <View style={styles.statCard}>
-                        <Text style={styles.statNumber}>
+                        <Text testID="pending-count" style={styles.statNumber}>
                             {data.pendingToday}
                         </Text>
 
@@ -73,7 +74,7 @@ export default function DashboardScreen() {
 
                 {/* Graph Section */}
                 <View style={styles.graphContainer}>
-                    <Text style={styles.sectionTitle}>
+                    <Text testID="graph-section" style={styles.sectionTitle}>
                         Task Distribution
                     </Text>
                 </View>
@@ -83,8 +84,8 @@ export default function DashboardScreen() {
                     Recent Tasks
                 </Text>
 
-                <View style={styles.taskItem}>
-                    <Text>
+                <View testID="recent-task-1" style={styles.taskItem}>
+                    <Text >
                         ✓ Design Login Screen
                     </Text>
                 </View>

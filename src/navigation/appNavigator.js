@@ -15,8 +15,6 @@ export default function AppNavigator() {
         state => state.auth.isLoggedIn,
     );
 
-    console.log("isloggin---------->>>>", isLoggedIn)
-
     return (
         <Stack.Navigator
             screenOptions={{

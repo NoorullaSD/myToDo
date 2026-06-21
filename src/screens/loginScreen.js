@@ -91,6 +91,7 @@ export default function LoginScreen() {
                     </Text>
 
                     <TextInput
+                        testID="email-input"
                         style={styles.input}
                         placeholder="Enter your email"
                         placeholderTextColor="#9CA3AF"
@@ -109,6 +110,7 @@ export default function LoginScreen() {
 
                     <View style={styles.passwordBox}>
                         <TextInput
+                            testID="password-input"
                             style={styles.passwordInput}
                             placeholder="Enter password"
                             placeholderTextColor="#9CA3AF"
@@ -118,6 +120,7 @@ export default function LoginScreen() {
                         />
 
                         <TouchableOpacity
+                            testID="toggle-password"
                             onPress={() =>
                                 setShowPassword(
                                     !showPassword,
@@ -142,6 +145,7 @@ export default function LoginScreen() {
 
                 {/* Login Button */}
                 <TouchableOpacity
+                    testID="login-button"
                     disabled={!isValid}
                     onPress={handleLogin}
                     style={[

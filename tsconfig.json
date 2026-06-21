@@ -8,7 +8,9 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    "App.js"
+    "App.js",
+    "jest.setup.js",
+    "__tests__/DashboardScreen.test.js"
   ],
   "exclude": [
     "**/node_modules",
